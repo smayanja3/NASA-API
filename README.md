@@ -74,7 +74,7 @@ To run this project locally:
 1. Clone the repository:
 
 ```bash
-git clone YOUR-GITHUB-REPO-URL
+git clone https://github.com/smayanja3/NASA-API.git
 ```
 
 2. Navigate into the project folder.
