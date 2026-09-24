@@ -5,18 +5,131 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
+body{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background:#14162a;
+  color:#f5f6f8;
+  min-height: 100vh;
+  min-width: 100vw;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem 1.5rem;
+
+}
+
+h1{
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom:2.3rem;
+  letter-spacing: 0.1em;
+  color:#ffffff;
+
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom:2rem 0 3rem 0;
+  text-align: center;
+  color:#d0d6f9;
+}
+
+h3{
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width:700px;
+  text-align: center;
+  color:#97a1b9;
+  margin-top:2rem;
+}
+
+h3 a{
+  color:#d0d6f9;
+  text-decoration: none;  
+}
+
+input{
+  background-color: #1e213a;
+  border: 1px solid #383b59;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+input:focus{
+  border-color: #6172f3;
+}
+
+button{
+  background-color: #4f46e5;
+  color:#ffffff;
+  border:none;
+  padding: 0.75rem 1.5rem;
+  font-size:1rem;
+  font-weight: 500;
+  border-radius:8px;
+  margin-bottom:2rem ;
+  cursor:pointer;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+img, video{
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+  width:100%;
+  max-width:650px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-top: 0.5rem;
+  object-fit: contain;
 }
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-  
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 2rem 1rem;
+    min-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  input,
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
