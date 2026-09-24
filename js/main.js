@@ -24,7 +24,7 @@ function weatherWatch(){
                 let videoLink = doc.querySelector('source').src;
                 console.log(videoLink);
                 document.querySelector('video').src = videoLink;
-                document.querySelector('video').style.display = 'block'
+                 document.querySelector('video').style.display = 'block'
                 document.querySelector('img').style.display = 'none'
 
             }else if(data.media_type === 'image'){
@@ -42,4 +42,4 @@ function weatherWatch(){
 //img src
 //h3 description
 
-//MAY 24TH 2026 
+//MAY 24TH 2026  
