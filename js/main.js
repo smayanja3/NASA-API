@@ -10,7 +10,7 @@ function weatherWatch(){
     const inputVal = document.querySelector('input').value.replaceAll('-','').slice(2)
     
     const url = `https://science.nasa.gov/wp-json/wp/v2/apod-basic/${inputVal}`
-    //document.querySelector('h2').innerText
+    //document.querySelector('h2').innerText 
     fetch(url)
         .then(res => res.json())
         .then((data) => {
