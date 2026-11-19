@@ -2,6 +2,8 @@
 
 An interactive **NASA Astronomy Picture of the Day (APOD) application** that allows users to explore space by selecting a date and viewing NASA's featured content from that day. 🌌
 
+**Live Demo:** [[Live Site](https://smayanja3.github.io/NASA-API/)]
+
 ## 📸 Project Preview
 
 This project was created using **HTML, CSS, JavaScript, and the NASA API**.
